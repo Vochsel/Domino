@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript" src="src/domino.js"></script>
+		<style type="text/css">
+		#panel {
+			background-color: #ddd;
+			border: solid thin #999;
+			border-radius: 4px;
+			width: 200px;
+			height: 50px;
+			padding: 1vw;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="panel">Test<br><input/></div>
+		<script type="text/javascript">
+			var panel = Domino.Select("panel");
+			Domino.Interaction.Draggable.Create(panel);
+		</script>
+	</body>
+</html>
